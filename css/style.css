@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7ecde;
+}
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+@font-face {
+    font-family: headerFont;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: secondaryFont;
+    src: url(../fonts/Righteous/Righteous-Regular.ttf);
+}
+
+
+h1 {
+    font-family: headerFont;
+    font-size: 50px;
+    color: #352e28;
+    position: relative;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 31%;
+    left: 0;
+    bottom: 2px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: height 0.3s;
+}
+
+h1:hover::before {
+    height: 70%;
+}
+
+
+
+.form-control:focus {
+    border-color: 
+    #d99c39;
+box-shadow: 0 0 0 0.25rem rgba(250,222,180,255)
+  }
+
+
+.site {
+    border-top: 2px dotted #352e28;
+    border-bottom: 2px dotted #352e28;
+
+
+ 
+        h2{
+            font-family: secondaryFont;
+            font-size: 25px; 
+            
+        background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  
+        }
+
+
+    .submit {
+        #submitButton {
+            background-color: #d1512d !important;
+        }
+        #submitButton:hover {
+            background-color: #bb4120 !important;
+        }
+
+        .modal {
+            p {
+                font-family: "Bree Serif", serif;
+                font-size: 21px;
+                line-height: 1.3;
+                color: #352e28;
+            }
+
+            li {
+                font-size: 19px !important;
+                padding-top: 10px;
+
+                i {
+                    color: #bb4120;
+                }
+            }
+
+            .circles span{
+                display: block;
+                width: 20px;
+                height: 20px;
+            }
+            .circle1{
+                background-color: #f15f5d !important;
+            }
+            .circle2{
+                background-color: #febe2e !important;
+            }
+            .circle3{
+                background-color: #4db748 !important;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+.visit {
+    background-color: #9eb23b;
+}
+
+.visit:hover {
+    background-color: #8a9e23;
+}
+
+.delete {
+    background-color: #eb1d36;
+}
+
+.delete:hover {
+    background-color: #d30820;
+}
+
+th {
+    color: #212529 !important;
+  
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+td {
+    color: #212529 !important;
+}
